@@ -1,5 +1,5 @@
 import React, {useEffect, useState} from 'react';
-import { Typography, IconButton } from '@material-ui/core';
+import { Typography, Button } from '@material-ui/core';
 
 import useStyles from './styles';
 
@@ -25,9 +25,9 @@ const RandomBeer = () => {
             <img src={imageUrl} className={classes.beerLogo} alt="beer" />
             <Typography variant="h1" className={classes.typography}>{beerName}</Typography>
             <Typography variant="h5" className={classes.typography}>{description}</Typography>
-            <IconButton aria-label="Generate a random beer" onClick={fetchBeer}>
-                    <Typography variant="h5" className={classes.typography}>Generate a random beer</Typography>
-            </IconButton>
+            <Button color="primary" variant="outlined" className={classes.button} onClick={fetchBeer}>
+                <img src="https://cdn-icons-png.flaticon.com/512/931/931949.png" alt="beer" className={classes.beerIcon} /> <Typography variant="h5" className={classes.typography}>Generate a random beer</Typography>
+            </Button>
         </>
     )
 }

@@ -8,4 +8,11 @@ export default makeStyles(() => ({
     typography: {
         color: "black",
     },
+    button: {
+        backgroundColor: "gold",
+    },
+    beerIcon: {
+        height: "50px",
+        width: "50px",
+    },
 }));
